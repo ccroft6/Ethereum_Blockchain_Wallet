@@ -58,10 +58,11 @@ To create a workspace, click on "Quickstart Ethereum".
 To interact with this file and open your own streamlit web interface using the streamlit code written in `fintech_finder.py`:
 1. Fork the repository
 2. Clone the forked repository to your local machine `git clone <repo_name>`
-3. Open Ganache and copy the mnemonic found at the top of your Ganache application and paste it into the ".env" file
+3. Open Ganache and copy the mnemonic found at the top of your Ganache application and paste it into the "SAMPLE.env" file. Then, rename the file as ".env"
 `MNEMONIC = '<paste your mnemonic here>'`
-4. Open your terminal and change your current working directory to the location where these files are stored
-5. Activate the environment and launch streamlit:
+4. In the `candidate_database`, copy any address (besides the first one) from Ganache and paste it in the list for each fintech professional
+5. Open your terminal and change your current working directory to the location where these files are stored
+6. Activate the environment and launch streamlit:
     ```
     conda activate dev
     streamlit run fintech_finder.py
@@ -95,14 +96,18 @@ Here is an example of the drop-down menu for choosing a fintech professional:
 Here is an example of choosing the number of hours that you want to hire the professional for:
 ![Choosing_Hours](./Images/app_features.png)
 
-Here is an example of a transaction that was sent to Kendall for his 8 hours of work:
+Here is an example of a transaction that was sent to Kendall for his 20 hours of work:
 ![Send_Transaction](./Images/sent_transaction.png)
 
 ### Ganache Connection
-Here is an example of the Ganache account balance; the transaction paid Kendall the 1.28 Ether he was owed:
+Here is an example of the Ganache account balance; the transaction paid Kendall the 3.2 Ether that he was owed:
 ![Ganache_balance](./Images/balance_ganache.png)
 
-Here is an example of 
+Here is an example of the transaction in Ganache; the TX hash matches the hash on Streamlit:
+![Ganache_transaction](./Images/ganache_transaction.png)
+
+Here is an example of a closer view of the transaction details:
+![Transaction_details](./Images/transaction_detail.png)
 ---
 
 ## Contributors
