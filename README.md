@@ -108,6 +108,7 @@ Here is an example of the transaction in Ganache; the TX hash matches the hash o
 
 Here is an example of a closer view of the transaction details:
 ![Transaction_details](./Images/transaction_detail.png)
+
 ---
 
 ## Contributors
