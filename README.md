@@ -8,10 +8,9 @@ The goal of these Python files is to create an application named "Fintech Finder
 ## Technologies 
 In addition to the standard Python 3.7 dev libraries, this file leverages the following libraries and/or dependencies:
 * [Web3.py](https://web3py.readthedocs.io/en/stable/overview.html) - A Python library for connecting to and performing operations on Ethereum-based blockchains
-* [Mnemonic](https://pypi.org/project/mnemonic/) - A Python implementation for generating a 12- or 24-word mnemonic seed phrase based on the BIP-39 standard
 * [bip44](https://pypi.org/project/bip44/) - A Python implementation for deriving hierarchical deterministic wallets from a seed phrase based on the BIP-44 standard
 * [Ganache](https://trufflesuite.com/ganache/) - A program that allows you to quickly set up a local blockchain, which you can use to test and develop smart contracts
-* [streamlit](https://streamlit.io/) - Turns data scripts into shareable web apps using Python
+* [Streamlit](https://streamlit.io/) - Turns data scripts into shareable web apps using Python
 * [dotenv](https://pypi.org/project/python-dotenv/) - Python-dotenv reads key-value pairs from a .env file and can set them as environment variables
 * [dataclasses](https://docs.python.org/3/library/dataclasses.html) - A decorator that is used to add generated special methods to classes
 * [typing](https://docs.python.org/3/library/typing.html) - Provides runtime support for type hints
@@ -41,17 +40,44 @@ Ganache network: w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 ---
 
 ## Installation Guide
-
+If you do not already have the required **technologies** installed, install them now through your terminal.
+For example:
+```
+pip install streamlit
+pip install web3==5.17
+pip install bip44
+pip install dataclasses
+```
 
 ---
 
 ## Usage
+To interact with this file and open your own streamlit web interface using the streamlit code written in `fintech_finder.py`:
+1. Fork the repository
+2. Clone the forked repository to your local machine `git clone <repo_name>`
+3. Open Ganache and copy the mnemonic found at the top of your Ganache application and paste it into the ".env" file
+`MNEMONIC = '<paste your mnemonic here>'`
+4. Open your terminal and change your current working directory to the location where these files are stored
+5. Activate the environment and launch streamlit:
+    ```
+    conda activate dev
+    streamlit run fintech_finder.py
+    ```
 
+Instructions for using the Streamlit application:
+1. Review the fintech professionals' bios, which includes their ratings and hourly rates in Ether   
+2. Select a Person from the drop-down menu 
+3. Type in or use the +/- arrows to indicate how many hours you want to hire the person for
+4. Press the "Send Transaction" button to pay the professionals their earned wages in Ether
+5. Review the Validated Transaction Hash 
+6. On Ganache, check your account balance and click on the "TRANSACTIONS" tab to review the transactions you made via Streamlit
 
 ---
 
 ## Methods
-
+1. Create `crypto_wallet.py` file that contains the Ethereum transaction functions (i.e., generate account, get balance, send transaction)
+2. Create the `fintech_finder.py`. Import the functions from the `crypto_wallet.py` file. Add the candidate information to streamlit, and add streamlit functionality that allows a customer to sign and execute a payment transaction
+3. Inspect the transaction by reviewing the validated transaction hash and reviewing the transaction in Ganache
 
 ---
 
