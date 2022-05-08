@@ -49,6 +49,9 @@ pip install bip44
 pip install dataclasses
 ```
 
+If you do not already have Ganache, download and install the lastest version of Ganache [here](https://trufflesuite.com/ganache/). 
+To create a workspace, click on "Quickstart Ethereum".
+
 ---
 
 ## Usage
@@ -65,6 +68,7 @@ To interact with this file and open your own streamlit web interface using the s
     ```
 
 Instructions for using the Streamlit application:
+*See example screenshot of the app below*
 1. Review the fintech professionals' bios, which includes their ratings and hourly rates in Ether   
 2. Select a Person from the drop-down menu 
 3. Type in or use the +/- arrows to indicate how many hours you want to hire the person for
@@ -82,12 +86,23 @@ Instructions for using the Streamlit application:
 ---
 
 ## Results - Streamlit Application
+For examples of the streamlit application in action, check out these screenshots.
 
 ### App Overview 
+Here is an example of the drop-down menu for choosing a fintech professional: 
+![App_Overview](./Images/website_example.png)
 
+Here is an example of choosing the number of hours that you want to hire the professional for:
+![Choosing_Hours](./Images/app_features.png)
+
+Here is an example of a transaction that was sent to Kendall for his 8 hours of work:
+![Send_Transaction](./Images/sent_transaction.png)
 
 ### Ganache Connection
+Here is an example of the Ganache account balance; the transaction paid Kendall the 1.28 Ether he was owed:
+![Ganache_balance](./Images/balance_ganache.png)
 
+Here is an example of 
 ---
 
 ## Contributors
