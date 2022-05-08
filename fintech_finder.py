@@ -76,7 +76,7 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # * `get_balance`
 # * `send_transaction`
 
-# Import functions from `crypto_wallet.py
+# Import functions from `crypto_wallet.py`
 from crypto_wallet import generate_account, get_balance, send_transaction
 
 ################################################################################
@@ -85,10 +85,10 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 # Database of Fintech Finder candidates including their name, digital address, rating and hourly cost per Ether.
 # A single Ether is currently valued at $1,500
 candidate_database = {
-    "Lane": ["Lane", "0xaC8eB8B2ed5C4a0fC41a84Ee4950F417f67029F0", "4.3", .20, "Images/lane.jpeg"],
-    "Ash": ["Ash", "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396", "5.0", .33, "Images/ash.jpeg"],
-    "Jo": ["Jo", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.7", .19, "Images/jo.jpeg"],
-    "Kendall": ["Kendall", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.1", .16, "Images/kendall.jpeg"]
+    "Lane": ["Lane", "0xc93B72fD47F76ECAb9D0a91f9d9ab213916742ad", "4.3", .20, "Images/lane.jpeg"],
+    "Ash": ["Ash", "0xFdA205Cb516E2B59c3Ee5119BFe7f9C2aCB53F0a", "5.0", .33, "Images/ash.jpeg"],
+    "Jo": ["Jo", "0xE747D36567B4bD99B5aa1Ae78B107A10992f3128", "4.7", .19, "Images/jo.jpeg"],
+    "Kendall": ["Kendall", "0xE025E6D0141A995Dd88076F767b801348D264A11", "4.1", .16, "Images/kendall.jpeg"]
 }
 
 # A list of the FinTech Finder candidates first names
