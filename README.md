@@ -1,5 +1,5 @@
 # Ethereum Blockchain Wallet
-![Crypto_Wallet](./Images/wallet_image.jpeg)
+![Crypto_Wallet](./Images/ethereum.png)
 
 The goal of these Python files is to create an application named "Fintech Finder" that customers can use to find fintech professionals from among a list of candidates, hire them, and pay them using the Ethereum blockchain network. This will allow customers to instantly pay the fintech professionals whom they hire with cryptocurrency. 
 
@@ -58,9 +58,8 @@ To create a workspace, click on "Quickstart Ethereum".
 To interact with this file and open your own streamlit web interface using the streamlit code written in `fintech_finder.py`:
 1. Fork the repository
 2. Clone the forked repository to your local machine `git clone <repo_name>`
-3. Open Ganache and copy the mnemonic found at the top of your Ganache application and paste it into the "SAMPLE.env" file. Then, rename the file as ".env"
-`MNEMONIC = '<paste your mnemonic here>'`
-4. In the `candidate_database`, copy any address (besides the first one) from Ganache and paste it in the list for each fintech professional
+3. Open Ganache and copy the mnemonic found at the top of your Ganache application and paste it into the "SAMPLE.env" file. Then, rename the file as ".env". Example: `MNEMONIC = '<paste your mnemonic here>'`
+4. In the `candidate_database` of the `fintech_finder.py` file, copy any address (besides the first one) from Ganache and paste an address for each fintech professional in the list
 5. Open your terminal and change your current working directory to the location where these files are stored
 6. Activate the environment and launch streamlit:
     ```
@@ -69,7 +68,7 @@ To interact with this file and open your own streamlit web interface using the s
     ```
 
 Instructions for using the Streamlit application:
-*See example screenshot of the app below*
+(*See example screenshot of the app below*)
 1. Review the fintech professionals' bios, which includes their ratings and hourly rates in Ether   
 2. Select a Person from the drop-down menu 
 3. Type in or use the +/- arrows to indicate how many hours you want to hire the person for
